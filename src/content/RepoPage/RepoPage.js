@@ -95,7 +95,7 @@ const RepoPage = () => {
   return (
     <div className="repo-page">
       <Query query={REPO_QUERY}>
-        {({ loading, error, data: { organization }, fetchMore }) => {
+        {({ loading, error, data: { organization } }) => {
           // Waiting for the request to complete
           if (loading)
             return (
